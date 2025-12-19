@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | LUXORA</title>
+    <link rel="stylesheet" href="luxora.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <img src="c:\Users\lenovo\Desktop\luxora\pictures\lu.jpg" alt="LUXORA Logo">
+            <span class="brand-name">LUXORA</span>
+        </div>
+        <nav class="mega-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button id="dark-light-toggle">Toggle Mode</button>
+        </div>
+    </header>
+
+    <!-- HERO / PAGE HEADER -->
+    <section class="hero faq-hero">
+        <div class="hero-content">
+            <h1>Frequently Asked Questions</h1>
+            <p>Find answers to common questions about LUXORA’s mega-luxury platform.</p>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="faq">
+        <div class="container">
+            <h2>Have Questions?</h2>
+            <div class="faq-accordion">
+
+                <div class="faq-item">
+                    <button class="faq-question">What is LUXORA?</button>
+                    <div class="faq-answer">
+                        <p>LUXORA is a mega-luxury platform offering elite services, lifestyle solutions, and innovative experiences for premium users worldwide.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">How do I join LUXORA?</button>
+                    <div class="faq-answer">
+                        <p>You can join LUXORA by signing up on our platform and selecting the membership level suitable for your luxury lifestyle needs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Are services available globally?</button>
+                    <div class="faq-answer">
+                        <p>Yes, LUXORA offers select luxury services and experiences to elite members around the globe.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Is there a VIP support team?</button>
+                    <div class="faq-answer">
+                        <p>Absolutely! Our VIP concierge and support team is available 24/7 for all premium members.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">How do I upgrade my membership?</button>
+                    <div class="faq-answer">
+                        <p>Contact us for your membership upgrade in the “Contact Us” section.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-column">
+                <h3>About LUXORA</h3>
+                <p>We merge luxury, creativity, and innovation to deliver an unparalleled lifestyle platform.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="products.html">Products</a>
+            </div>
+            <div class="footer-column">
+                <h3>Connect</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 LUXORA. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- FAQ TOGGLE SCRIPT -->
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                faqItems.forEach(i => {
+                    if(i !== item) i.classList.remove('active');
+                });
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+</html>
